@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+
+}
+body{
+    height: 100vh;
+    background-image: url(image/img2.jpg);
+   
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-family:"Sofia", sans-serif;
+    color: rgb(9, 49, 10);
+    font-weight:500px;
+    
+}
+.container{
+    position: relative;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.List{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+}
+.List> input[type="text"]{
+    width: 90%;
+    color: rgb(25, 85, 29);
+    border: 5px solid rgb(25, 85, 29);
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 35px;
+    text-transform: capitalize;
+}
+.List button{
+    margin: 0px 20px;
+    background: rgb(44, 146, 51);
+    font-size: large;
+    
+    color: #fff;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.notCompleted,.Completed{
+    margin: 5px 0;
+    padding: 20px;
+    color: rgb(71, 15, 56);
+    background:linear-gradient(green,grey);
+    border-radius: 35px;
+}
+h3{
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+ol{
+    list-style: none;
+}
+ol li{
+    width:100%;
+    margin-top: 10px;
+    padding: 20px;
+    background: #d51c47;
+    font-size: 20px;
+    border-radius: 35px;
+    color: #eaf1e9;
+}
+ol.Completed li{
+    background-color: rgb(44, 134, 144);
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+}
+ol li::before{
+    content: counter(my-counter);
+    background:green;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    color: rgb(71, 15, 56);
+    margin-right: 0.5rem;
+}
+li button{
+    float: right;
+    padding: 5px;
+    font-size: 30px;
+    line-height: 30px;
+    margin-right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
